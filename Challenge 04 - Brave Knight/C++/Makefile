@@ -1,7 +1,7 @@
 SOURCES := $(wildcard *.cc)
 OBJECTS := $(subst .cc,.o,$(SOURCES))
 
-main: $(OBJECTS)
+main.out: $(OBJECTS)
 	g++ -std=c++11 -o $@ $^
 
 %.o: %.cc
